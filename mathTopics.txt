@@ -1,0 +1,15 @@
+Linear Algebra
+Probability & Statistics
+Calculus
+Optimization
+Discrete Mathematics
+Graph Theory
+Information Theory
+Overfitting, Regularization
+
+
+Linear Algebra – Vectors, Matrices, and Transformations
+Probability & Statistics – Bayes Theorem, Distributions
+Calculus – Derivatives, Gradients (Used in optimization)
+Optimization – Gradient Descent, Loss Functions
+Machine Learning Core Concepts – Overfitting, Regularization

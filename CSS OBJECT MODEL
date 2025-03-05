@@ -1,0 +1,35 @@
+DOM -> 
+
+getElementById()
+getElementByName()
+querySelector()
+querySelectorAll()
+
+
+
+style
+getComputedStyle()
+getPropertyValue()
+setProperty()
+removeProperty()
+getBoundingClientRect()
+
+variables in css -> 
+
+
+clientHeight , clientWidth
+scrollHeight , scrollWidth
+
+
+offsetTop , offsetLeft 
+
+scrollBy() , scrollIntoView()
+
+
+Dynamic insert or delete css -> 
+
+insertRule() 
+deleteRule()
+
+
+

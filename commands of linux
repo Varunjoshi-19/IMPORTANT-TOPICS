@@ -1,0 +1,145 @@
+sudo systemctl 	status name 
+sudo systemctl start  name
+sudo systemctl stop name 
+
+
+sudo chown username pathOfDirectory   // to change the ownership of any directory in your system 
+
+sudo dpkg -i filname.deb  // to install the package first 
+
+sudo apt-get install -f  // fix dependency issue if there is .
+
+
+
+
+
+
+Installation commands ->
+
+1. Debian Packages (.deb)
+
+  sudo dpkg -i packageName.deb
+  sudo apt-get install -f
+
+
+2. Tarballs (.tar, .tar.gz, .tar.bz2, .tar.xz) -> 
+
+# Extract .tar file
+tar -xf archive.tar
+
+
+----------------------------------------------------------------------------------
+# Extract .tar.gz file
+tar -xzf {name}.tar.gz
+
+sudo mv {name} /opt/{name}
+sudo ln -s /opt/Postman/Postman /usr/bin/{name}
+sudo nano /usr/share/applications/n{name}ame.desktop
+
+[Desktop Entry]
+Encoding=UTF-8
+Name={name}
+Exec={name}
+Icon=/opt/{name}/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Development;
+
+-------------------------------------------------------------------------
+
+
+# Extract .tar.bz2 file
+tar -xjf archive.tar.bz2
+
+# Extract .tar.xz file
+tar -xJf archive.tar.xz
+
+
+3. Shell Scripts (.sh) -> 
+
+chmod +x  script-name.sh  # Make the script executable by allowing them to execute
+
+./script-name.sh # Execute the script
+
+
+this process is same for the file with the extension -> ( [.AppImage] , [.bin] , [.run] )  
+
+
+4. RPM Packages (.rpm) -> 
+
+sudo apt-get install alien
+sudo alien -i package-name.rpm
+
+
+5. ISO Files (.iso)
+
+sudo mount -o loop ubuntu-20.04-desktop-amd64.iso /mnt
+
+
+
+6. Zip Archives (.zip)
+
+sudo apt-get install unzip  // install this if not
+
+unzip archive.zip
+
+
+
+
+
+How to start the server in your local system ->  apache and nginx 
+
+one way you can use the xampp control panel to start the apache server -> 
+cd in the directory the where manager-linux.run is located like -> sudo /opt/lampp/manager-linux-x64.run
+
+SECOND WAY-> 
+
+1.first identify which process using the port 80
+
+run -> sudo lsof -i:80  and sudo lsof -i:8080
+kill that process -> sudo kill -9 1234 // forcefull kill the process
+
+2.then after -> 
+
+run -> sudo systemctl start apache2 
+       sudo systemctl status apache2
+       
+By following these step you can simply run the localhost server on your system.
+
+
+1. HOW TO INSTALL POSTGRESQL -> 
+
+sudo apt update
+sudo apt upgrade -y
+
+INSTALL POSTGRES -> 
+
+sudo apt install wget -y
+wget -qO - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+sudo apt update
+
+sudo apt install postgresql postgresql-contrib -y
+
+START THE SERVICES -> 
+
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+
+psql --version -> check version
+
+sudo -i -u postgres 
+
+psql -> enter in the postgres shell
+
+\password postgres -> to set the password
+
+
+
+
+
+
+
+
+
+

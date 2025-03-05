@@ -1,0 +1,126 @@
+1. node ts =>  
+
+1.npm init -y
+2.npm install typescript @types/node ts-node-dev --save-dev 
+3.npx tsc --init => For tsconfig.json file
+4. [paste this inside tsconfig file] -> 
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+
+5.npm install express nodemon
+  npm install @types/express --save-dev
+  
+6. For to install any other libaries => 
+   1. npm install cors
+      npm install @types/cors --save-dev
+
+
+
+2.react ts =>
+
+1. yarn create vite my-project --template react-ts
+2. yarn 
+3. npm run dev
+4. For to install any other libaries =>
+    1. yarn add react-router-dom
+       yarn add @types/react-router-dom --dev
+
+
+3.mongodb =>
+1. mongosh
+
+[ npm install mongoose ]
+
+
+4.postgresql =>
+
+1. sudo -i -u postgres
+2. psql 
+3. \c database_name user_name => connect with database
+4. \dt => list all the tables inside database
+5. \list => list all database
+6. \q => to quit out 
+
+
+[npm install pg ]
+[ npm install --save-dev @types/pg ]
+
+5.redis =>
+
+[ sudo systemctl stop or start redis ] ==>  this is running on PORT => 6379 AND 8001 
+that's why need to change the docker image PORT to => (6380 and 8002) 
+
+1. docker ps -a  -> to list all containers 
+2. docker [ start , stop , restart , logs , inspect , rm ]   <container-id_or_name> 
+4. docker images  -> to list all images
+3. docker exec -it <container-id> <command>   => to execute a command inside that container 
+4. docker info  -> detailed info 
+5. docker run -d --name <name> -p <port1>:6379 -p <port2>:8001 redis/redis-stack:latest  => pull redis stack image 
+
+created one ->
+
+1.docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+note -> if you already have redis in your then it is running on your system at port 6379 by default so change it some other port
+
+2.docker exec -it container-id sh
+  redis-cli
+
+[  npm install ioredis  ]  	
+
+
+prisma => 
+
+1.npm init -y
+2.npm install --save-dev prisma typescript ts-node @types/node nodemon
+
+3.create file tsconfig.json  
+{
+     
+"compilerOptions": {
+
+"sourceMap": true,
+"outDir": "dist",
+"strict": true,
+"lib": ["ESNext"],
+"esModuleInterop": true
+
+}
+
+}
+
+4. npx prisma init --datasource-provider postgresql => Initialize Prisma [  This will generate a prisma folder with a schema.prisma file and a .env file where you can configure your database connection.]
+ 
+5. npx prisma migrate dev --name init  => This will create the migration file and apply it to the database.
+6. npx prisma generate => Now, generate the Prisma Client to interact with the database
+
+summary -> 
+
+Initialize a Node.js project.
+Install Prisma, TypeScript, and necessary packages.
+Set up Prisma and configure the database connection in .env.
+Define your data model in prisma/schema.prisma.
+Run Prisma migrations to apply the model to the database.
+Generate the Prisma Client.
+Write TypeScript code to interact with your database using Prisma Client.
+Run the code using ts-node.
+
+
+
+
+
+
+
+
+
+
+

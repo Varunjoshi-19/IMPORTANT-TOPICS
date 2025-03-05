@@ -1,0 +1,11 @@
+1.some topics you need to learn => 
+
+clusters 
+worker_threads 
+nginx
+rate limiting
+web sockets
+caching with redis
+microservices (Message queue with RebbitMQ )
+file streaming ( file handling ) 
+graphql s

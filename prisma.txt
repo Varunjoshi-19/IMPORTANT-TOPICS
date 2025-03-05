@@ -1,0 +1,22 @@
+API -> API is a software tool that acts as a bridge between the backend (where data lives) and the system (frontend or another service) that requests it.
+The backend holds information like:
+User details, maps, payments, or any data (JSON, XML, etc.).
+The API handles the request and sends the data securely in the requested format (e.g., JSON).
+It ensures the right data goes to the right system without exposing the backend's inner workings.
+
+
+PRISMA IMPORTANT TERMS -> 
+
+npm init - y
+
+npm install --save-dev prisma typescript ts-node @types/node nodemon
+
+npx prisma init --datasource-provider postgresql
+
+npx prisma migrate dev --name init
+
+npm install @prisma/client
+
+npx prisma generate
+
+

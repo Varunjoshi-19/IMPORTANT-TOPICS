@@ -1,0 +1,4 @@
+yarn create vite my-project --template react-ts
+
+
+

@@ -1,0 +1,53 @@
+
+
+1.file system and navigation -> 
+
+ls -> list all the file and folder 
+cd -> to change the directory or folder
+pwd -> print current working directory
+cp -> used to copy files and folder
+mv -> used to move files and folder
+rm -> delete the directory and file
+mkdir -> creates the directory 
+rmdir -> delete the directory
+touch , cat -> to create files 
+nano , vim  -> editors to edits file 
+chmod , chown -> change files and folder permission
+ls -a , ls -l -> show all hidden files and with permission
+
+
+2. Package management -> ubuntu uses apt to install packages
+
+  sudo apt update && sudo apt upgrade -y
+
+ 1. sudo apt install < package name >
+ 2. sudo dpkg -i file.deb 
+
+
+3. Process mangement 
+
+1. ps aux , ps -a , top , htop -> view all running process 
+2. sudo kill -9 <process id >  -> kills the running process 
+3. sudo lsof -i:<PORT> -> shows the process running at that port
+
+4. user management 
+
+1. sudo adduser <username>
+2. sudo deluser <username>
+3.  usermod -aG <group> <user>
+
+5. Networking 
+
+1. ip a , ifconfig 
+2. ping google.com
+3. netstat -tulnp
+
+
+
+
+
+
+
+
+
+

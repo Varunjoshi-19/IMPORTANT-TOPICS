@@ -1,0 +1,5 @@
+1. INDEXING -> for faster queries 
+2. QUERY OPTIMIZATION -> do not fetch everything from database just necessary things
+3. CONNECTION POOLING -> reuse the opened database reduce latency 
+4. CACHING -> avoid expensive queries
+

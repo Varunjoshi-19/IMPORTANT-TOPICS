@@ -1,0 +1,9 @@
+1.load balancing -> 
+
+2.reverse proxy ->
+
+A server proxy is an intermediate server that sits between a client (browser, app) and a backend server.
+ It forwards requests and responses, often for security, 
+load balancing, caching, or other optimizations.
+
+3. 

@@ -1,0 +1,24 @@
+redis in docker -> 
+
+
+[ sudo systemctl stop or start redis ] ==>  this is running on PORT => 6379 AND 8001 
+that's why need to change the docker image PORT to => (6380 and 8002) 
+
+1.newly created one ->
+sudo docker ps -a
+sudo lsof -i : PORT
+sudo docker rm redis-stack
+docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+
+2.for existing one -> 
+sudo docker images
+sudo docker run --name redis-stack  redis/redis-stack
+sudo docker ps -a
+docker exec -it container-id bash redis-cli
+
+
+
+
+
+
+
