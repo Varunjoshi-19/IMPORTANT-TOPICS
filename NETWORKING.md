@@ -27,3 +27,9 @@ it matches the prefix matching IP address and transmits the packet to another ro
 BGP (BORDER GATEWAY PROTOCOL) -> BGP is the routing protocol of the internet that helps the  
                                 router to decide the best path to send the data.
 
+
+# TCP -> TRANSMISSION CONTROL PROTOCOL 
+
+#
+
+
